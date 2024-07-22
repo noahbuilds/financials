@@ -1,0 +1,142 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-icon
+      slot="start"
+      name="chevron-back-outline"
+      (click)="goBack()"
+      class="mx-3"
+    ></ion-icon>
+    <ion-title class="text-lg text-center">Notification Settings</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-text class="text-xs flex justify-center py-4">
+    Choose what notifications to receive on mobile and email.
+  </ion-text>
+
+  <!-- Push Notifications Section -->
+  <ion-list-header>
+    <ion-label class="text-lg text-white font-semibold"
+      >Push Notifications</ion-label
+    >
+  </ion-list-header>
+
+  <div class="divide-y">
+    <ion-list inset="true" [lines]="'none'" style="border-radius: 10px">
+      <ion-item>
+        <ion-label>
+          <h5 class="text-sm">In-app Notification</h5>
+          <span class="text-xs">Get in-app notifications about status etc</span>
+        </ion-label>
+        <ion-toggle
+          slot="end"
+          class="custom-toggle"
+          color="danger"
+          checked
+        ></ion-toggle>
+      </ion-item>
+      <div class="border-t mx-3"></div>
+
+      <ion-item>
+        <ion-label>
+          <h5 class="text-sm">Payment</h5>
+          <span class="text-xs">Transaction related notifications</span>
+        </ion-label>
+        <ion-toggle
+          slot="end"
+          class="custom-toggle"
+          color="danger"
+          checked
+        ></ion-toggle>
+      </ion-item>
+      <div class="border-t mx-3"></div>
+
+      <ion-item>
+        <ion-label>
+          <h5 class="text-sm">Loans</h5>
+          <span class="text-xs">Such as loan status updates</span>
+        </ion-label>
+        <ion-toggle
+          slot="end"
+          class="custom-toggle"
+          color="danger"
+          checked
+        ></ion-toggle>
+      </ion-item>
+      <div class="border-t mx-3"></div>
+
+      <ion-item>
+        <ion-label>
+          <h5 class="text-sm">News</h5>
+          <span class="text-xs">New features and announcements</span>
+        </ion-label>
+        <ion-toggle
+          slot="end"
+          class="custom-toggle"
+          color="danger"
+          checked
+        ></ion-toggle>
+      </ion-item>
+      <div class="border-t mx-3"></div>
+      <ion-item>
+        <ion-label>
+          <h5 class="text-sm">Activities</h5>
+          <span class="text-xs">All activities done by user</span>
+        </ion-label>
+        <ion-toggle
+          slot="end"
+          class="custom-toggle"
+          color="danger"
+        ></ion-toggle>
+      </ion-item>
+    </ion-list>
+  </div>
+
+  <!-- Email Alerts Section -->
+  <ion-list-header>
+    <div>
+      <ion-label class="text-lg text-white font-semibold"
+        >Email Alerts
+      </ion-label>
+
+      <ion-text class="">
+        <h6 class="text-xs font-normal">
+          Select the services that need notifications.
+        </h6>
+      </ion-text>
+    </div>
+  </ion-list-header>
+
+  <ion-list inset="true" [lines]="'none'" style="border-radius: 10px">
+    <ion-item>
+      <ion-label>
+        <h5 class="text-sm">Transfers & Withdrawals</h5>
+        <span class="text-xs">Get alerts for all transactions</span>
+      </ion-label>
+      <ion-toggle
+        slot="end"
+        class="custom-toggle"
+        color="danger"
+        checked
+      ></ion-toggle>
+    </ion-item>
+    <div class="border-t mx-3"></div>
+    <ion-item>
+      <ion-label>
+        <h5 class="text-sm">Add Money</h5>
+        <div class="w-64">
+          <span class="text-xs"
+            >Get an alert every time money is added to your account.</span
+          >
+        </div>
+      </ion-label>
+      <ion-toggle
+        slot="end"
+        class="custom-toggle"
+        color="danger"
+        checked
+      ></ion-toggle>
+    </ion-item>
+  </ion-list>
+</ion-content>
